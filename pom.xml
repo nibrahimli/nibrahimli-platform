@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.nibrahimli.platform</groupId>
+  <artifactId>nibrahimli-platforme</artifactId>
+  <version>1.0-RELEASE</version>
+  <packaging>pom</packaging>
+  
+  <name>nibrahimli-platform</name>
+  <url>http://maven.apache.org</url>
+  <description>Nibrahimli projects platform using spring io</description>
+  
+  <properties>
+  	<version.version>4.12</version.version>
+  	<spring-platform-bom.version>1.1.2.RELEASE</spring-platform-bom.version> 
+  	<hibernate.version>4.3.9.Final</hibernate.version> 
+  	<mysql-connector-java.version>5.1.35</mysql-connector-java.version>
+  <!-- 	<javax.servlet-api.version>3.1.0</javax.servlet-api.version>  	 -->
+  </properties>
+  
+  
+  <dependencyManagement>
+        <dependencies>
+        
+        	<!-- ======= T H I R P A R T Y ======== -->
+        	
+      <!--   	<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${version.version}</version>
+			</dependency> -->
+			        	
+
+			<!-- Spring -->			
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${spring-platform-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            
+            <!-- Hibernate -->
+            <dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+	
+            <dependency>
+            	<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${hibernate.version}</version>
+            </dependency>
+            
+            <!-- MySQL -->
+            <dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql-connector-java.version}</version>
+			</dependency>
+			            
+            <!-- Java Servlet -->
+            <!-- <dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${javax.servlet-api.version}</version>
+			</dependency> -->
+			            
+        </dependencies>
+    </dependencyManagement>
+  
+  
+  
+</project>
