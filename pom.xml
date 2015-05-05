@@ -10,7 +10,7 @@
   <description>Nibrahimli projects platform using spring io</description>
   
   <properties>
-  	<junit.version>4.12</junit.version>
+ 	<junit.version>4.11</junit.version>
   	<spring-platform-bom.version>1.1.2.RELEASE</spring-platform-bom.version> 
   	<hibernate.version>4.3.9.Final</hibernate.version> 
   	<mysql-connector-java.version>5.1.35</mysql-connector-java.version>
@@ -58,14 +58,7 @@
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql-connector-java.version}</version>
 			</dependency>
-			            
-            <!-- Java Servlet -->
-            <!-- <dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>javax.servlet-api</artifactId>
-				<version>${javax.servlet-api.version}</version>
-			</dependency> -->
-			            
+			                       
         </dependencies>
     </dependencyManagement>
   
