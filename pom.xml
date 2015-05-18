@@ -20,9 +20,7 @@
   <dependencyManagement>
         <dependencies>
         
-        	<!-- ======= T H I R P A R T Y ======== -->
-        	
-			<!-- Spring -->			
+        	<!-- Spring -->			
             <dependency>
                 <groupId>io.spring.platform</groupId>
                 <artifactId>platform-bom</artifactId>
