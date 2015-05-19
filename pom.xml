@@ -22,7 +22,7 @@
   <dependencyManagement>
         <dependencies>
         
-        	<!-- Spring -->			
+            <!-- Spring -->			
             <dependency>
                 <groupId>io.spring.platform</groupId>
                 <artifactId>platform-bom</artifactId>
@@ -74,6 +74,7 @@
 	          <encoding>${project.build.sourceEncoding}</encoding>
 	        </configuration>
 	     	</plugin>
+	     	
 	  	</plugins>
 	</build>
   
